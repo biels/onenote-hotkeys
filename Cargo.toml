@@ -1,0 +1,22 @@
+[package]
+name = "onenote-hotkeys"
+version = "0.1.0"
+edition = "2021"
+description = "A program that allows you to draw in onenote on windows on a laptop with touchscreen with better hotkeys"
+author = "biels"
+license = "MIT"
+
+[dependencies]
+winapi = { version = "0.3.9", features = [
+    "winuser",
+    "winerror",
+    "libloaderapi",
+    "windef",
+    "minwindef",
+    "winnt",
+    "winbase",
+    "wincon",
+    "winreg",
+    "winerror",
+] }
+ctrlc = "3.1.10"
